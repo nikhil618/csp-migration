@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "csp-migration": {
+      "description": "A blank schematic.",
+      "factory": "./csp-migration/index#cspMigration",
+      "schema": "./csp-migration/schema.json"
+    }
+  }
+}
