@@ -1,10 +1,15 @@
 {
-  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
-  "schematics": {
-    "csp-migration": {
-      "description": "A blank schematic.",
-      "factory": "./csp-migration/index#cspMigration",
-      "schema": "./csp-migration/schema.json"
-    }
-  }
+	"$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+	"schematics": {
+		"csp-migration": {
+			"description": "A schematic to update application to a strict CSP mode",
+			"factory": "./csp-migration/index#cspMigration",
+			"schema": "./csp-migration/schema.json"
+		},
+		"ng-add": {
+			"description": "A schematic to update application to a strict CSP mode",
+			"factory": "./csp-migration/index#cspMigration",
+			"schema": "./csp-migration/schema.json"
+		}
+	}
 }
