@@ -1,5 +1,6 @@
-import { SchematicContext, SchematicsException, Tree } from '@angular-devkit/schematics';
-import { Schema, StyleExtension } from './schema';
+import type { SchematicContext, Tree } from '@angular-devkit/schematics';
+import { SchematicsException } from '@angular-devkit/schematics';
+import type { Schema, StyleExtension } from './schema';
 
 function cspMigration(_options: Schema) {
 	return (_tree: Tree, _context: SchematicContext) => {
