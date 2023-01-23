@@ -35,6 +35,7 @@
 	"dependencies": {
 		"@angular-devkit/core": "^15.1.1",
 		"@angular-devkit/schematics": "^15.1.1",
+		"@angular/cli": "^15.1.2",
 		"@schematics/angular": "^15.1.2"
 	},
 	"devDependencies": {

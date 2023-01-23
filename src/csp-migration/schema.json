@@ -5,14 +5,31 @@
 	"type": "object",
 	"description": "Initialise a project to use CSP",
 	"properties": {
-		"name": {
+		"continueScriptExecution": {
+			"description": "Continue with script execution",
+			"type": "boolean",
+			"x-prompt": "The script will update your HTML files/template, would you like to execute it? Yes = Update files, No = Will run in dry mode",
+			"required": ["continueScriptExecution"]
+		},
+		"prefferedStyleFormat": {
+			"description": "Current preffered stylesheet format. Default: css",
 			"type": "string",
-			"description": "",
-			"x-prompt": "Name:",
-			"$default": {
-				"$source": "argv",
-				"index": 0
-			}
+			"enum": ["css", "scss"]
+		},
+		"updateInlineStyles": {
+			"type": "boolean",
+			"default": true,
+			"description": "Update any inline styles found"
+		},
+		"updateInlineScripts": {
+			"type": "boolean",
+			"default": true,
+			"description": "Update any inline event listeners"
+		},
+		"classPrefix": {
+			"type": "string",
+			"default": "csp-dyn",
+			"description": "Preffered class name prefix for inline styles. Default: (csp-dyn)"
 		}
 	}
 }
