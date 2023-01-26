@@ -8,7 +8,7 @@
 		"continueScriptExecution": {
 			"description": "Continue with script execution",
 			"type": "boolean",
-			"x-prompt": "The script will update your HTML files/template, would you like to execute it? Yes = Update files, No = Will run in dry mode",
+			"x-prompt": "The script will update your HTML files/template, would you like to execute it? \nYes = Update files \nNo = Will run in dry mode",
 			"required": ["continueScriptExecution"]
 		},
 		"prefferedStyleFormat": {

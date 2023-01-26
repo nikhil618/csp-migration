@@ -1,4 +1,5 @@
 export interface Schema {
+	srcRoot?: string;
 	continueScriptExecution: boolean;
 	prefferedStyleFormat?: StyleExtension;
 	updateInlineStyles?: boolean;
